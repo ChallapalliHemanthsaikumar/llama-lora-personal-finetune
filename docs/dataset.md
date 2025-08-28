@@ -58,7 +58,10 @@ To view a sample from the training set:
 
 ```python
 hf_dataset['train'][0]
-# Example output:
+```
+
+Example output:
+```json
 {
 	'instruction': '[INST] What tech stack did Hemanth use at Visusoft? [/INST]',
 	'response': 'He used FastAPI, React, Angular, Node.js, PostgreSQL, MongoDB, PyTorch, and Hugging Face Transformers.'
@@ -69,20 +72,9 @@ To view the dataset structure:
 
 ```python
 hf_dataset
-# Example output:
-# DatasetDict({
-#     train: Dataset({
-#         features: ['instruction', 'response'],
-#         num_rows: 53
-#     })
-#     test: Dataset({
-#         features: ['instruction', 'response'],
-#         num_rows: 6
-#     })
-# })
 ```
 
-Below is a screenshot of the `hf_dataset` output in Colab:
+Example output:
 
 ![hf_dataset output](images/loaded_dataset.png)
 
