@@ -25,7 +25,8 @@ You can run the full LoRA fine-tuning workflow in Google Colab:
 !pip install --upgrade transformers accelerate bitsandbytes
 !pip install bert-score sentence-transformers matplotlib
 !pip install rouge_score evaluate nltk
-!pip install wandb  # Optional
+ 
+# Optional
 
 
 ##### Optional W&B login:
