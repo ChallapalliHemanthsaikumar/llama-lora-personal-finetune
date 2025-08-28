@@ -13,6 +13,46 @@ Welcome! This documentation will guide you through fine-tuning LLaMA using **LoR
 
 
 
+## Colab Notebook
+
+You can run the full LoRA fine-tuning workflow in Google Colab:
+
+
+
+
+##### Python packages 
+
+!pip install --upgrade transformers accelerate bitsandbytes
+!pip install bert-score sentence-transformers matplotlib
+!pip install rouge_score evaluate nltk
+!pip install wandb  # Optional
+
+
+##### Optional W&B login:
+
+import wandb
+wandb.login()  # Enter your W&B token
+
+
+
+
+Hardware / Runtime
+
+Google Colab GPU (A100/V100 recommended)
+
+Minimum 12–16GB RAM 
+
+Here I used T4 GPU 
+
+
+
+
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/githubChallapalliHemanthsaikumar/llama-lora-personal-finetune/blob/main/notebooks/LLaMA_LoRA_Personal_Finetune.ipynb)
+
+
+
+
 
 
 
