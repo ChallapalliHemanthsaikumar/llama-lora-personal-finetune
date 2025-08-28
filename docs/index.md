@@ -3,6 +3,7 @@
 Welcome! This documentation will guide you through fine-tuning LLaMA using **LoRA** on a personal dataset.
 
 ## Sections
+-[Setup](setup.md)
 - [Dataset Preparation](dataset.md)
 - [LoRA Configuration](lora_config.md)
 - [Training the Model](training.md)
@@ -20,13 +21,24 @@ You can run the full LoRA fine-tuning workflow in Google Colab:
 
 
 
-##### Python packages 
 
+
+### Python Environment Setup
+
+Before you begin, install the required Python packages in your Colab or local environment:
+
+```bash
 !pip install --upgrade transformers accelerate bitsandbytes
 !pip install bert-score sentence-transformers matplotlib
 !pip install rouge_score evaluate nltk
- 
-# Optional
+```
+
+**Optional:** For experiment tracking, you can use Weights & Biases (W&B). To log in, run:
+
+```python
+import wandb
+wandb.login()  # Enter your W&B token when prompted
+```
 
 
 ##### Optional W&B login:
