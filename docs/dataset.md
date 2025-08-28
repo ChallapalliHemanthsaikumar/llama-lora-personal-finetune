@@ -1,17 +1,12 @@
+## Dataset Preparation
 
----
+The dataset for this project was prepared by using ChatGPT to generate user questions such as "Who am I?" and similar queries. Each sample was formatted in JSONL, where each line contains an instruction and a corresponding response. For example:
 
-### **2. `dataset.md`**
-
-```markdown
-# Dataset Preparation
-
-This section explains how to prepare your personal dataset for LLaMA fine-tuning.
-
-## 1. Dataset Format
-- Use a JSON or CSV file with the following structure:
 ```json
-[
-  {"prompt": "Who am I?", "completion": "I am Hemanth Challapalli, a Data Scientist."},
-  {"prompt": "Where do I work?", "completion": "I work at Hybopay Inc."}
-]
+{"instruction": "[INST] How did Hemanth Sai Kumar improve customer support efficiency? [/INST]", "response": "He reduced customer support response times by 40% through the development of LangChain-powered AI agents."}
+```
+
+Following this approach, at least 100 such samples were created and saved as a `.jsonl` file in the repository. This dataset serves as the foundation for fine-tuning the model on personalized instructions and responses.
+
+After creating the dataset, it was uploaded to Google Drive to enable easy access from Google Colab for training and experimentation.
+
