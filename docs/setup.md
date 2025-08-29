@@ -51,6 +51,8 @@ tokenizer = AutoTokenizer.from_pretrained(
 tokenizer.pad_token = tokenizer.eos_token  # Set padding token
 ```
 
+![tokenizer output](images/load_tokenizer.png)
+
 ## 5. Configure 4-bit Quantization (for Efficient Inference)
 
 ```python
