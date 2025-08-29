@@ -3,7 +3,7 @@
 Welcome! This documentation will guide you through fine-tuning LLaMA using **LoRA** on a personal dataset.
 
 ## Sections
--[Setup](setup.md)
+- [Setup](setup.md)
 - [Dataset Preparation](dataset.md)
 - [LoRA Configuration](lora_config.md)
 - [Training the Model](training.md)
@@ -41,10 +41,6 @@ wandb.login()  # Enter your W&B token when prompted
 ```
 
 
-##### Optional W&B login:
-
-import wandb
-wandb.login()  # Enter your W&B token
 
 
 
