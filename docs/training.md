@@ -1,8 +1,3 @@
----
-
-**Previous:** [LoRA Configuration](lora_config.md)
-
-**Next:** [Evaluation](evaluation.md)
 
 # Training LoRA-Fine-Tuned LLaMA-2
 
@@ -58,4 +53,12 @@ Below is a diagram illustrating the LoRA fine-tuning training workflow:
 ---
 
 
-![Training Compute](images/training_compute.png.png)
+![Training Compute](images/training_compute.png)
+
+
+
+---
+
+**Previous:** [LoRA Configuration](lora_config.md)
+
+**Next:** [Evaluation](evaluation.md)
