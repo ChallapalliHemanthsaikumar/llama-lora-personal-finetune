@@ -5,6 +5,16 @@ Welcome! This project demonstrates how to fine-tune Meta's LLaMA-2 model using L
 
 ---
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChallapalliHemanthsaikumar/llama-lora-personal-finetune/blob/main/notebooks/LLaMA_LoRA_Personal_Finetune.ipynb)
+
+
+
+[Open the notebook locally](notebooks/LLaMA_LoRA_Personal_Finetune.ipynb)
+
+---
+
+
 ## 1. Prerequisites & Setup
 
 - **Hugging Face Access:**
@@ -84,12 +94,14 @@ Welcome! This project demonstrates how to fine-tune Meta's LLaMA-2 model using L
 
 ---
 
-## 6. Trained Model
 
-- The trained LoRA adapter layers are available on Hugging Face:
-  [Hemanthchallapalli/lora-llama2-about-me](https://huggingface.co/Hemanthchallapalli/lora-llama2-about-me)
+## 6. Trained Model & Documentation
 
----
+- **Hugging Face Model:**
+  - [Hemanthchallapalli/lora-llama2-about-me (Hugging Face)](https://huggingface.co/Hemanthchallapalli/lora-llama2-about-me)
 
-For detailed guides, see the [docs/](docs/) folder for setup, configuration, training, and evaluation breakdowns.
+- **Project Documentation:**
+  - [llama-lora-personal-finetune Docs Site](https://challapallihemanthsaikumar.github.io/llama-lora-personal-finetune/)
+
+For detailed guides, see the [docs/](docs/) folder or the documentation site above for setup, configuration, training, and evaluation breakdowns.
 
