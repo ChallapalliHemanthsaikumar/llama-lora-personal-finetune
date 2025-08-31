@@ -1,4 +1,5 @@
 
+
 # Environment and Model Setup
 
 This section guides you through verifying your GPU, setting up your Hugging Face token, and loading the LLaMA-2 model and tokenizer for inference.
@@ -62,6 +63,16 @@ quant_config = BitsAndBytesConfig(
 )
 ```
 
+**Why use 4-bit quantization?**
+
+4-bit quantization (using `BitsAndBytesConfig`) allows you to load large language models like LLaMA-2 on GPUs with limited memory (such as 12–16GB VRAM). By reducing the precision of model weights from 16 or 32 bits down to 4 bits, you can:
+- Fit larger models on your hardware
+- Reduce memory usage and speed up inference
+- Maintain good performance for most generation tasks
+
+This is especially useful when working in environments like Google Colab or on consumer GPUs.
+```
+
 ## 6. Load the Model
 
 ```python
@@ -72,6 +83,10 @@ model = AutoModelForCausalLM.from_pretrained(
 	token=token
 )
 ```
+
+this may take few minutes
+
+![model output](images/load_model.png)
 
 ## 7. Generate Text with the Model
 
@@ -98,6 +113,28 @@ print(generated_text)
 ```
 
 ---
+
+# 8. Save the Model and Tokenizer for Future Use
+
+After loading the model and tokenizer, you can save them to your Google Drive. This way, you won’t need to download and load them from Hugging Face again, saving time and bandwidth in future sessions.
+
+```python
+# Save model and tokenizer to Google Drive
+save_path = "/content/drive/MyDrive/llama2_model_saved"
+model.save_pretrained(save_path)
+tokenizer.save_pretrained(save_path)
+```
+
+**Tip:** Next time, you can load the model and tokenizer directly from this folder:
+
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM
+model = AutoModelForCausalLM.from_pretrained(save_path, device_map="auto")
+tokenizer = AutoTokenizer.from_pretrained(save_path)
+```
+
+This avoids repeated downloads and speeds up your workflow in Colab or any environment with persistent storage.
+
 
 ## Code Explanation
 
