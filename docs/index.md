@@ -8,7 +8,6 @@ Welcome! This documentation will guide you through fine-tuning LLaMA using **LoR
 - [LoRA Configuration](lora_config.md)
 - [Training the Model](training.md)
 - [Evaluation](evaluation.md)
-- [Troubleshooting](troubleshooting.md)
 - [Resources & Notebooks](resources.md)
 
 
