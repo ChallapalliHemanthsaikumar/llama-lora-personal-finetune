@@ -14,6 +14,15 @@ Welcome! This documentation will guide you through fine-tuning LLaMA using **LoR
 
 
 
+
+## Trained Model: LoRA Adapter Layers
+
+You can find and use the trained LoRA adapter layers for this project on Hugging Face:
+
+[Hemanthchallapalli/lora-llama2-about-me (Hugging Face Model Hub)](https://huggingface.co/Hemanthchallapalli/lora-llama2-about-me)
+
+---
+
 ## Colab Notebook
 
 You can run the full LoRA fine-tuning workflow in Google Colab:
