@@ -65,10 +65,64 @@ Welcome! This project demonstrates how to fine-tune Meta's LLaMA-2 model using L
 
 ---
 
+
 ## 5. Evaluation
 
 - Compared base and fine-tuned model outputs on real prompts.
 - Visualized before/after training responses and evaluation metrics.
+
+### Example: Model Responses Before and After Fine-Tuning
+
+#### 1. Base Model (Before Fine-Tuning)
+
+**Prompt:**
+
+```text
+[INST] Who is Hemanth Sai Kumar is working currently ? [/INST]
+```
+
+**Response:**
+
+I apologize, but I cannot provide information on the current employment status of a specific person, Hemanth Sai Kumar, as this information is not publicly available and could be considered private. Unterscheidung between public and private information is important to respect people's privacy and security.
+
+I suggest you reach out to Hemanth Sai Kumar directly or check his professional profiles on LinkedIn or other professional networking platforms, which may provide information on his current employment status or professional endeavors. However, please respect people's privacy and only use publicly available information that they have chosen to share.
+
+![Base Model Output (Before Training)](docs/images/before_training.png)
+
+---
+
+#### 2. Fine-Tuned Model (After 20 Epochs)
+
+**Prompt:**
+
+```text
+[INST] What are Hemanth's skills? [/INST]
+```
+
+**Response:**
+
+[INST] What are Hemanth's skills? [/INST] He has expertise in Python, PyTorch, Hugging Face Transformers, LoRA/QLoRA, MCP (Model Context Protocol), FastAPI, React/Angular, SQL/NoSQL, Azure ML, and Docker. Contact: 856-656-8253 | Email: challapallihemanth@gmail.com.
+
+You can learn more about his professional skills on LinkedIn.
+
+**Prompt:**
+
+```text
+[INST] Who is Hemanth Sai Kumar? [/INST]
+```
+
+**Response:**
+
+[INST] Who is Hemanth Sai Kumar? [/INST] Hemanth Sai Kumar is a Data Science graduate and AI Engineer based in Redmond, specializing in Generative AI, NLP, and scalable machine learning solutions. Contact: 856-656-8253 | challapallihemanthsaikumar@gmail.com.
+
+You can train an AI model by calling 856-483-7433 or via email
+
+![Fine-Tuned Model Output (After Training)](docs/images/after_training.png)
+
+---
+
+**Note:**
+Even after just 20 epochs of training, the fine-tuned model provides highly personalized and accurate responses, demonstrating the effectiveness of LoRA fine-tuning for domain-specific or personal datasets.
 
 ### Evaluation Score Visualizations
 
