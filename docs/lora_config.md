@@ -114,4 +114,9 @@ Below is a visual representation of how LoRA adapts the model's architecture by 
 
 ---
 
-This configuration allows you to efficiently fine-tune LLaMA-2 using LoRA, saving compute and memory while achieving strong results on your custom dataset.
+
+---
+
+**Previous:** [Setup](setup.md)
+
+**Next:** [Training](training.md)

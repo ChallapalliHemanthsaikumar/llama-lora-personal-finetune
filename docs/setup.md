@@ -144,4 +144,9 @@ This avoids repeated downloads and speeds up your workflow in Colab or any envir
 - **Tokenizer & Model Loading:** Downloads and prepares the tokenizer and model from Hugging Face. 4-bit quantization is used for memory efficiency.
 - **Text Generation:** The `generate` function takes a prompt and returns the model's response.
 
-This setup ensures you are ready to run LLaMA-2 with LoRA fine-tuning or inference in your Colab or local environment.
+
+---
+
+**Previous:** [Project Overview](index.md)
+
+**Next:** [LoRA Configuration](lora_config.md)

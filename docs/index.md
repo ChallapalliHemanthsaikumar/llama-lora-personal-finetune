@@ -8,7 +8,7 @@ Welcome! This documentation will guide you through fine-tuning LLaMA using **LoR
 - [LoRA Configuration](lora_config.md)
 - [Training the Model](training.md)
 - [Evaluation](evaluation.md)
-- [Resources & Notebooks](resources.md)
+
 
 
 
@@ -73,5 +73,9 @@ Here I used T4 GPU
 
 
 
-See the [Training Guide](training.md) for detailed steps.
+
+
+---
+
+**Next:** Proceed to [Setup](setup.md) for environment and model preparation.
 

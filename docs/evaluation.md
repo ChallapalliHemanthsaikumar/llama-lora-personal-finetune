@@ -81,7 +81,16 @@ Even after just 20 epochs of training, the fine-tuned model provides highly pers
 | **Perplexity**          | 1147.09                           | 6.35                              | ~180x reduction                    |
 | **Semantic Similarity** | 47.78%                            | 61.20%                            | +13.42%                            |
 
+
 **Key Takeaways**:
 - **LoRA Success**: Fine-tuning with LoRA drastically improves all metrics, especially perplexity (1147 to 6.35), making the model fluent and task-specific.
 - **Semantic Gains**: BERTScore (+16.95%) and Semantic Similarity (+13.42%) confirm better meaning capture, ideal for your financial chatbot.
 - **Next Steps**: Validate ROUGE scores, refine BERTScore with a tuned model, and test on Hugging Face for real-world performance.
+
+---
+
+**Previous:** [Training](training.md)
+
+**Start working in Colab:**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChallapalliHemanthsaikumar/llama-lora-personal-finetune/blob/main/notebooks/LLaMA_LoRA_Personal_Finetune.ipynb)
